@@ -32,21 +32,21 @@ public class SkillsController {
                     "<input type = 'text' name = 'name' />" +
                     "<h2>My favorite language:</h2>" +
                         "<select id='firstChoice' name = 'firstChoice'>" +
-                            "<option value='java'>Java</option>" +
-                            "<option value='javascript'>JavaScript</option>" +
-                            "<option value='swift'>Swift</option>" +
+                            "<option value='Java'>Java</option>" +
+                            "<option value='JavaScript'>JavaScript</option>" +
+                            "<option value='Swift'>Swift</option>" +
                         "</select>" +
                     "<h2>My Second favorite language:</h2>" +
                         "<select id='secondChoice' name='secondChoice'>" +
-                            "<option value='java'>Java</option>" +
-                            "<option value='javascript'>JavaScript</option>" +
-                            "<option value='swift'>Swift</option>" +
+                            "<option value='Java'>Java</option>" +
+                            "<option value='JavaScript'>JavaScript</option>" +
+                            "<option value='Swift'>Swift</option>" +
                         "</select>" +
                     "<h2>My Third favorite language:</h2>" +
                         "<select id='thirdChoice' name = 'thirdChoice'>" +
-                            "<option value='java'>Java</option>" +
-                            "<option value='javascript'>JavaScript</option>" +
-                            "<option value='swift'>Swift</option>" +
+                            "<option value='Java'>Java</option>" +
+                            "<option value='JavaScript'>JavaScript</option>" +
+                            "<option value='Swift'>Swift</option>" +
                         "</select>" +
                     "<br><input type = 'submit' value = 'Submit'/>" +
                     "</form>" +
@@ -55,7 +55,7 @@ public class SkillsController {
     }
 
     @PostMapping("languages")
-    public String hello(@RequestParam String name, @RequestParam String firstChoice, @RequestParam String secondChoice, @RequestParam String thirdChoice) {
+    public String printChoices(@RequestParam String name, @RequestParam String firstChoice, @RequestParam String secondChoice, @RequestParam String thirdChoice) {
         return "<html>" +
                     "<body>" +
                         "<h1>" + name + "</h1>" +
